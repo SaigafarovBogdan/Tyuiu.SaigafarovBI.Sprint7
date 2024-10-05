@@ -5,11 +5,11 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task0", "Task0", "{401F0971-9D31-4E95-9C5D-B2D87C1CE52C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.V14", "Project.V14\Project.V14.csproj", "{29DC42E6-49EC-4E62-A57B-EEC16E6F917E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.V14", "Project.V14\Project.V14.csproj", "{29DC42E6-49EC-4E62-A57B-EEC16E6F917E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SaigafarovBI.Sprint7.Project.V14.Lib", "Tyuiu.SaigafarovBI.Sprint7.Project.V14\Tyuiu.SaigafarovBI.Sprint7.Project.V14.Lib.csproj", "{51690FAE-179F-4F95-AC40-EEB6249D4453}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.SaigafarovBI.Sprint7.Task0.V14.Lib", "Tyuiu.SaigafarovBI.Sprint7.Project.V14\Tyuiu.SaigafarovBI.Sprint7.Task0.V14.Lib.csproj", "{51690FAE-179F-4F95-AC40-EEB6249D4453}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SaigafarovBI.Sprint7.Project.V14.Test", "Tyuiu.SaigafarovBI.Sprint7.Project.V14.Test\Tyuiu.SaigafarovBI.Sprint7.Project.V14.Test.csproj", "{073A969A-789C-4DCF-A375-C68516FAA558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.SaigafarovBI.Sprint7.Task0.V14.Test", "Tyuiu.SaigafarovBI.Sprint7.Project.V14.Test\Tyuiu.SaigafarovBI.Sprint7.Task0.V14.Test.csproj", "{073A969A-789C-4DCF-A375-C68516FAA558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
