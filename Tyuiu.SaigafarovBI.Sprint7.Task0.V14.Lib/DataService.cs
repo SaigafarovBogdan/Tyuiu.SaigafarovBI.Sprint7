@@ -21,7 +21,7 @@ namespace Tyuiu.SaigafarovBI.Sprint7.Project.V14
             }
             return values;
         }
-        public bool GetPathImageFile(string fileName, string folderPath, out string ImagePath)
+        public bool GetPathImageFile(string fileName, string folderPath, out string? ImagePath)
         {
             string[] formats = { "*.jpg", "*.jpeg", "*.png" };
 
