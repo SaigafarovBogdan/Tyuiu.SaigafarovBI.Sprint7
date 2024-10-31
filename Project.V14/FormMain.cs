@@ -200,11 +200,11 @@ namespace Project.V14
             if (int.TryParse(textBoxSearch_SBI.Text, out int number))
             {
                 DataGridView dataGrid = tabControlRoutes_SBI.SelectedIndex == 0 ? dataGridViewRoutes_SBI : dataGridViewFeatures_SBI;
-                for (int i = 0; i < rows; i++)
+                foreach (DataGridViewRow row in dataGrid.Rows)
                 {
-                    if (Convert.ToInt32(dataGrid.Rows[i].Cells[0].Value) != number)
+                    if (Convert.ToInt32(row.Cells[0].Value) != number)
                     {
-                        dataGrid.Rows.Remove(dataGrid.Rows[i]);
+                        dataGrid.Rows.Remove(row);
                     }
                 }
             }
