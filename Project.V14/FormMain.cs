@@ -12,7 +12,7 @@ namespace Project.V14
         public List<string[]>? items;
 
         int rows;
-        const int COLUMNS = 6;
+        const int COLUMNS = 5;
 
         int rowFocusIndex;
 
@@ -97,7 +97,7 @@ namespace Project.V14
             rows = items.Count;
 
             dataGridViewRoutes_SBI.RowCount = rows;
-            dataGridViewRoutes_SBI.ColumnCount = COLUMNS - 2;
+            dataGridViewRoutes_SBI.ColumnCount = COLUMNS - 1;
 
             dataGridViewFeatures_SBI.RowCount = 0;
 
@@ -128,7 +128,7 @@ namespace Project.V14
             string str = "";
             for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < COLUMNS; j++)
+                for (int j = 0; j < COLUMNS-1; j++)
                 {
                     if (j != COLUMNS - 1)
                     {
@@ -200,14 +200,20 @@ namespace Project.V14
             if (int.TryParse(textBoxSearch_SBI.Text, out int number))
             {
                 DataGridView dataGrid = tabControlRoutes_SBI.SelectedIndex == 0 ? dataGridViewRoutes_SBI : dataGridViewFeatures_SBI;
-                foreach (DataGridViewRow row in dataGrid.Rows)
-                {
-                    if (Convert.ToInt32(row.Cells[0].Value) != number)
-                    {
-                        dataGrid.Rows.Remove(row);
-                    }
-                }
-            }
+				List<DataGridViewRow> rowsToRemove = new List<DataGridViewRow>();
+
+				foreach (DataGridViewRow row in dataGrid.Rows)
+				{
+					if (row.Cells[0].Value == null || Convert.ToInt32(row.Cells[0].Value) != number)
+					{
+						rowsToRemove.Add(row);
+					}
+				}
+				foreach (DataGridViewRow row in rowsToRemove)
+				{
+					dataGrid.Rows.Remove(row);
+				}
+			}
             else
             {
                 MessageBox.Show("¬ведены неверные данные", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
